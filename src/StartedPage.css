@@ -1,0 +1,97 @@
+.started-pageh {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #54BA66, #66C1A4);
+    color: #fff;
+}
+
+.headerh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   margin-bottom: 20px;
+  
+}
+
+.logoh img {
+    width: 240px;
+    height: 110px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.main-contenth {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+.h2n{
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.action-button {
+    background-color: #54BA66;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #4CAF50;
+}
+
+.toggle-mode-text {
+    margin-top: 20px;
+    color: #333;
+}
+
+.toggle-mode-link {
+    color: #54BA66;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toggle-mode-link:hover {
+    text-decoration: underline;
+}

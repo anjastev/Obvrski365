@@ -1,0 +1,207 @@
+.my-tasks-page {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    padding: 20px;
+    background: #f5f5f5;
+    min-height: 100vh; 
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #54BA66;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header .nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-content {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+.napredok{
+    margin-left: 10px;
+}
+.add-task-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-priority-select{
+    width: 280px;
+}
+
+.add-task-container .task-input,
+.add-task-container .task-priority-select,
+.add-task-container .task-date-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    //width: 100%;
+}
+
+.add-task-button {
+    padding: 10px 20px;
+    background-color: #54BA66;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+
+.task-filter {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.task-filter button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #eee;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.task-filter button.active {
+    background-color: #54BA66;
+    color: white;
+}
+
+.task-filter button:hover {
+    background-color: #ddd;
+}
+
+
+.task-list ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.due-date{
+    margin-left: 20px;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #54BA66;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.task-list li.completed {
+    border-left: 4px solid #ccc;
+    background-color: #e9ecef;
+    text-decoration: line-through;
+    color: #666;
+}
+
+.task-list li:hover {
+    transform: scale(1.03);
+    background-color: #f0f8ff;
+}
+
+
+.task-text {
+    font-size: 16px;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.edit-task-button,
+.delete-task-button {
+    padding: 8px 12px;
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+    margin-left: 20px;
+}
+
+.edit-task-button:hover {
+    background-color: #54BA66;
+    color: white;
+    transform: scale(1.05);
+}
+
+.delete-task-button:hover {
+    background-color: #ff5a5f;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+.priority-low {
+    background-color: #54BA66;
+}
+
+.priority-medium {
+    background-color: #FCBA04;
+}
+
+.priority-high {
+    background-color: #E63946;
+}
+
+.priority-low, .priority-medium, .priority-high {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white;
+}
+
+
+.progress-container {
+    width: 95%;
+    height: 65px; 
+    background-color: #ddd;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.progress-bar {
+    height: 40px;
+    background: linear-gradient(90deg, #54BA66, #4CAF50); 
+    transition: width 0.5s ease-in-out;
+    border-radius: 30px; 
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
