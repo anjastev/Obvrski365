@@ -25,8 +25,8 @@ const ProfilePage = () => {
         setTimeout(() => {
             setIsSaving(false);
             setSaveMessage('Профилот е зачуван!');
-            setTimeout(() => setSaveMessage(''), 3000); // Clear message after 3 seconds
-        }, 1000); // Simulate save delay
+            setTimeout(() => setSaveMessage(''), 3000); 
+        }, 1000); 
     };
 
     return (
