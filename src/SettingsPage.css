@@ -117,3 +117,51 @@ h2 {
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 24px; 
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-group, .form-groups {
+        max-width: 100%; 
+    }
+
+    .header {
+        margin-bottom: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 20px; 
+    }
+
+    .nav ul {
+        gap: 5px; 
+    }
+
+    .form-input, .form-select {
+        padding: 8px; 
+    }
+
+    .header {
+        text-align: left;
+    }
+    
+    .card {
+        width: 100%; 
+        padding: 15px; 
+    }
+}

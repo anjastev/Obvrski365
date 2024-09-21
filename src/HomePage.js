@@ -3,10 +3,30 @@ import './HomePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const HomePage = () => {
-
+    
     const navigate = useNavigate();
+    
+    useEffect(() => {
+        const hamburger = document.querySelector('.hamburger');
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                document.querySelector('.nav ul').classList.toggle('show');
+            });
+        }
+
+        
+        return () => {
+            if (hamburger) {
+                hamburger.removeEventListener('click', function() {
+                    document.querySelector('.nav ul').classList.toggle('show');
+                });
+            }
+        };
+    }, []); 
+
     const handleLogOut = () => {
         
         navigate('/started'); 

@@ -28,9 +28,14 @@
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -39,7 +44,10 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
-    margin-bottom: 20px;
+}
+
+.profile-picture input {
+    margin-top: 10px;
 }
 
 .profile-details {
@@ -52,7 +60,8 @@
     margin-bottom: 5px;
 }
 
-.profile-details input, .profile-details textarea {
+.profile-details input,
+.profile-details textarea {
     width: 95%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -79,4 +88,22 @@
 
 .save-button:hover {
     background-color: #3D9061;
+}
+
+
+.save-message {
+    color: #54BA66;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .profile-info {
+        max-width: 90%;
+    }
+
+    .profile-picture img {
+        width: 80px;
+        height: 80px;
+    }
 }
